@@ -1,0 +1,562 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+    font-family: roboto;
+    font-size: 10px;
+    color:black;
+}
+
+#logo img{
+    width:auto;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+}
+header form{
+    text-align: center;
+}
+
+header #boton-menu{
+    margin-left:45%;
+}
+
+header div button{
+    background-color: #1259c3;;
+    border-radius: 10%;
+    color:white;
+}
+
+section h2{
+    margin-bottom: 20px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descripcion, .descuento{
+    font-size: 16px;
+}
+
+footer section{
+    text-align: center;
+}
+footer section i{
+    color: #1259c3;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+main section .fa-solid{
+    border:solid 1px lightgreen ;
+    padding: 5px;
+    border-radius:50% ;
+    color: lightgreen;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+#UV{
+    background-color:#ebebeb;
+}
+
+#Oferta{
+    background-color: #ebebeb;
+}
+
+article{
+    margin-bottom: 10px;
+}
+.publicacion .desc-prod{
+    width: 100%;
+    padding-left:15px;
+    padding-right:15px;
+
+}
+
+.publicacion img{
+    width: 100%;
+}
+
+.desc-prod .descuento{
+    color: green;
+}
+
+@media (max-width:361px) { /*Celular */
+    /*Înicio del logo y buscador*/
+    header{
+        padding-top: 7%;
+    }
+
+    header #logo-promo{
+        width: 100%;
+        text-align: center;
+        
+    }
+    #cabecera{
+        display: flex;
+        margin: 0px 10px;
+        align-items:center ;
+    }
+
+    #compras{
+        text-align: center;
+        padding: 5% 0%;
+    }
+
+    #cabecera form{
+        display:flex;
+        background-color: white;
+        height:100%;
+        width: 100%;
+        border: 1px  ;
+        padding:5px 2px;
+        border-radius: 3px;
+    }
+
+    #cabecera form input{
+        padding-left: 5px ;
+    }
+
+    #cabecera form button,#cabecera form input{
+        background-color: white;
+        color:gray;
+        width: 100%;
+        border:0px;
+        
+    }
+    #cabecera form button{
+        width: 30%;
+    }
+
+    #cabecera form,#cabecera #logo{
+        margin:2%; 
+        flex-grow: 1; 
+    }
+
+    #logo img{
+        width: 100%;
+        height:auto;
+    }
+    /*Fin del logo y buscador*/
+    /*Inicio del menu de opc */
+    header div #menu{
+        margin: 7px 7px;
+    }
+    header #boton-menu{
+        margin-bottom: 10px;
+        
+    }
+    
+    #boton-menu button{
+        border:0px;
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    nav ul{
+        display: none;
+        
+    }
+    /*Fin del menu de opc */
+    /*Inicio del main*/
+    main{
+        width: 100%;
+        margin: auto;
+        background-color: #ebebeb;
+    }
+    body{
+        background-color: #ebebeb;
+    }
+
+    .desc-prod{
+        background-color: white;
+        width: 100%;
+    }
+
+    .desc-prod i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        position: relative;
+        left: 90%;
+        bottom:3vw;
+    }
+
+    .flex-pd{
+        display: flex;
+        width: 100%;
+    }
+    .descuento, .precio, .descripcion{
+        margin:10px 5px;
+    }
+    .descuento{
+        flex-grow: 0.7;
+    }
+    .precio{
+        flex-grow: 0.3;
+        
+    }
+    /*Fin del main */
+}
+
+
+
+@media (min-width:360px) and (max-width:768px) { /*Tablets */
+    /*inicio del logo y buscador*/
+    header{
+        width: 100%;
+        font-family: roboto;
+        font-size: 10px;
+        color:black;
+    }
+    header img{
+        width: 100%;
+        text-align: center;
+    }
+
+    #cabecera{
+        display: flex;
+        align-items:center;
+    }
+    
+    #cabecera form{
+        display:flex;
+        width: 100%;
+        height: auto;
+        border: 1px  ;
+        padding:5px 2px;
+        border-radius: 3px;
+    }
+
+    #cabecera form input{
+        padding-left: 5px ;
+        flex-grow: 0.7;
+        width: 100%;
+    }
+    #cabecera form,#cabecera #logo{
+        margin:2%; 
+        flex-grow: 1; 
+    }
+
+
+    #cabecera form button{
+        flex-grow: 0.3;
+        background-color:white;
+        border:solid 1px black;
+        color: gray;
+        margin-left: 2px;
+    }
+    #compras{
+        margin:2px;
+    }
+
+    
+    #header-sup{
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding:5% 2%;
+        justify-content: space-between;
+    }
+    #header-sup p,#header-sup div{
+        flex-grow: 1;
+    }
+
+   
+    div #barra-opc{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div #barra-opc ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    div #barra-opc #logos{
+        display: flex;
+        flex-wrap: wrap;
+    }  
+
+    div #barra-opc a{
+        width: 100%;
+        margin:0px 6px;
+    }
+
+    #boton-menu button{
+        display :none;
+    }
+
+    #logo img{
+        width:100%;
+        height: auto;
+    }
+    /*inicio del logo y buscador*/
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background-color: #ebebeb;
+    }
+
+    #UV{
+        display:flex;
+        flex-direction: column;
+    }
+
+    body{
+        background-color: #ebebeb;
+        width:100%;
+    }
+    
+    .publicacion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        background-color: #ebebeb;
+        margin-bottom: 0px;
+        width: 29.9%;
+        height: 100%; 
+        margin:5% 5%;
+    }
+    
+
+    #uv-flex{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .publicacion div{
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .desc-prod{
+        background-color: white;
+    }
+
+    .desc-prod i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        position: relative;
+        left: 90%;
+        bottom:3vw;
+    }
+    .descuento {
+        padding-left: 5px;
+    }
+    
+    .flex-pd{
+        display: flex;
+    }
+    .descuento{
+        flex-grow: 0.7;
+    }
+    .precio{
+        flex-grow: 0.3; 
+    }
+
+}
+
+@media (min-width:769px){ /* desktops*/
+     
+    /*inicio del logo y buscador*/
+    header{
+        width: 100%;
+        font-family: roboto;
+        font-size: 10px;
+        color:black;
+    }
+    header img{
+        width: 100%;
+        text-align: center;
+    }
+
+    #cabecera{
+        display: flex;
+        align-items:center;
+    }
+    
+    #cabecera form{
+        display:flex;
+        width: 100%;
+        height: auto;
+        border: 1px  ;
+        padding:5px 2px;
+        border-radius: 3px;
+    }
+
+    #cabecera form input{
+        padding-left: 5px ;
+        flex-grow: 0.7;
+        width: 70%;
+    }
+    #cabecera form,#cabecera #logo{
+        margin:2%; 
+        flex-grow: 1; 
+    }
+
+
+    #cabecera form button{
+        flex-grow: 0.3;
+        background-color:white;
+        border:solid 1px black;
+        color: gray;
+        margin-left: 2px;
+    }
+    #compras{
+        margin:2px;
+    }
+
+    
+    #header-sup{
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding:5% 2%;
+        justify-content: space-between;
+    }
+    #header-sup p,#header-sup div{
+        flex-grow: 1;
+    }
+
+   
+    div #barra-opc{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div #barra-opc ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    div #barra-opc #logos{
+        display: flex;
+        flex-wrap: wrap;
+    }  
+
+    div #barra-opc a{
+        width: 100%;
+        margin:0px 6px;
+    }
+
+    #boton-menu button{
+        display :none;
+    }
+
+    #logo img{
+        width:100%;
+        height: auto;
+    }
+    /*inicio del logo y buscador*/
+    nav p{
+        text-align: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background-color: #ebebeb;
+    }
+
+    #UV{
+        display:flex;
+        flex-direction: column;
+    }
+
+    body{
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .publicacion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: 0px;
+        width: 30%;
+        height: 100%; 
+        margin:2.5% 2.5%;
+        flex-grow: 0.25;
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
+
+    #uv-flex{
+        display:flex;
+        position: relative;
+        
+    }
+
+
+    .publicacion div{
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .desc-prod{
+        background-color: white;
+        
+       
+    }
+
+    .desc-prod i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        position: relative;
+        left: 90%;
+        bottom:2.3vw;
+    }
+    
+    
+    .flex-pd{
+        display: flex;
+    }
+    .descuento{
+        flex-grow: 0.7;
+    }
+    .precio{
+        flex-grow: 0.3;
+    }
+
+    .descuento, .precio, .descripcion{
+        margin:auto 5px;
+    }
+
+}
