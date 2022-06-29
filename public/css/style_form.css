@@ -1,0 +1,557 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+    font-family: roboto;
+    font-size: 10px;
+    color:black;
+}
+
+#logo img{
+    width:auto;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+}
+header form{
+    text-align: center;
+}
+
+header #boton-menu{
+    margin-left:45%;
+}
+
+header div button{
+    background-color: #1259c3;;
+    border-radius: 10%;
+    color:white;
+}
+
+section h2{
+    margin-bottom: 20px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descripcion, .descuento{
+    font-size: 16px;
+}
+
+footer section{
+    text-align: center;
+}
+footer section i{
+    color: #1259c3;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+main section .fa-solid{
+    border:solid 1px lightgreen ;
+    padding: 5px;
+    border-radius:50% ;
+    color: lightgreen;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+#UV{
+    background-color:#ebebeb;
+}
+
+#Oferta{
+    background-color: #ebebeb;
+}
+
+article{
+    margin-bottom: 10px;
+}
+.publicacion .desc-prod{
+    width: 100%;
+    padding-left:15px;
+    padding-right:15px;
+
+}
+
+.publicacion img{
+    width: 100%;
+}
+
+.desc-prod .descuento{
+    color: green;
+}
+
+@media (max-width:361px) { /*Celular */
+    /*Înicio del logo y buscador*/
+    header{
+        padding-top: 7%;
+    }
+
+    header #logo-promo{
+        width: 100%;
+        text-align: center;
+        
+    }
+    #cabecera{
+        display: flex;
+        margin: 0px 10px;
+        align-items:center ;
+    }
+
+    #compras{
+        text-align: center;
+        padding: 5% 0%;
+    }
+
+    #cabecera form{
+        display:flex;
+        background-color: white;
+        height:100%;
+        width: 100%;
+        border: 1px  ;
+        padding:5px 2px;
+        border-radius: 3px;
+    }
+
+    #cabecera form input{
+        padding-left: 5px ;
+    }
+
+    #cabecera form button,#cabecera form input{
+        background-color: white;
+        color:gray;
+        width: 100%;
+        border:0px;
+        
+    }
+    #cabecera form button{
+        width: 30%;
+    }
+
+    #cabecera form,#cabecera #logo{
+        margin:2%; 
+        flex-grow: 1; 
+    }
+
+    #logo img{
+        width: 100%;
+        height:auto;
+    }
+    /*Fin del logo y buscador*/
+    /*Inicio del menu de opc */
+    header div #menu{
+        margin: 7px 7px;
+    }
+    header #boton-menu{
+        margin-bottom: 10px;
+        
+    }
+    
+    #boton-menu button{
+        border:0px;
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    nav ul{
+        display: none;
+        
+    }
+    /*Fin del menu de opc */
+    /*Inicio de formulario */
+    main #registro{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario input, .img-cont input{
+        width: 80%;
+        margin:5% 10%;
+        padding:5% 0%;
+        text-align: center;
+        border-radius: 5px;
+        border:solid 2px lightgray;
+    }
+    .ing-foto input{
+        width: 80%;
+        margin:5% 10%;
+        padding:5% 0%;
+        text-align: center;
+        border:0px;
+    }
+
+    .formulario p{
+        display: flex;
+        flex-direction: column;   
+    }
+    .formulario p #nacimiento{
+        margin:5% 10%;
+        padding:5% 0%;
+        text-align:start ;
+    }
+    .tipo-func, .interes, .img-cont, .flex-contra, .fecha-nac{
+        display: flex;
+        flex-direction: column;
+    }
+    .tipo-func p, .interes p{
+        margin:2% 4%;
+    }
+    .label-titulo{
+        margin-bottom: 3%;
+    }
+    .img-cont .ing-foto input{
+        width: 100%;
+        margin:3% 0%;
+    }
+    .img-cont .ing-foto label{
+        margin-bottom: 3%;
+    }
+    .flex-contra input[type="submit"]{
+        border:solid 2px #ebebeb;
+        color:white;
+        background-color:#1259c3;
+    }
+    /*Fin de formulario*/
+}
+@media (min-width:360px) and (max-width:768px) { /*Tablets */
+    /*inicio del logo y buscador*/
+    header{
+        width: 100%;
+        font-family: roboto;
+        font-size:2vw;
+        color:black;
+    }
+    header img{
+        width: 100%;
+        text-align: center;
+    }
+
+    #cabecera{
+        display: flex;
+        align-items:center;
+    }
+    
+    #cabecera form{
+        display:flex;
+        width: 100%;
+        height: auto;
+        border: 1px  ;
+        padding:5px 2px;
+        border-radius: 3px;
+    }
+
+    #cabecera form input{
+        padding-left: 5px ;
+        flex-grow: 0.7;
+        width: 100%;
+    }
+    #cabecera form,#cabecera #logo{
+        margin:2%; 
+        flex-grow: 1; 
+    }
+
+
+    #cabecera form button{
+        flex-grow: 0.3;
+        background-color:white;
+        border:solid 1px black;
+        color: gray;
+        margin-left: 2px;
+    }
+    #compras{
+        margin:2px;
+    }
+
+    
+    #header-sup{
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding:5% 2%;
+        justify-content: space-between;
+    }
+    #header-sup p,#header-sup div{
+        flex-grow: 1;
+    }
+
+   
+    div #barra-opc{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div #barra-opc ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    div #barra-opc #logos{
+        display: flex;
+        flex-wrap: wrap;
+    }  
+
+    div #barra-opc a{
+        width: 100%;
+        margin:0px 6px;
+    }
+
+    #boton-menu button{
+        display :none;
+    }
+
+    #logo img{
+        width:100%;
+        height: auto;
+    }
+    /*inicio del logo y buscador*/
+        /*Inicio de formulario */
+        main #registro{
+            display: flex;
+            flex-direction: column;
+            margin:0% 12%;
+            padding:10px;
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+        }
+        .formulario input, .img-cont input{
+            width: 100%;
+            margin:5% 0%;
+            padding:5% 0%;
+            text-align: start;
+            border-radius: 5px;
+            border:solid 2px lightgray;
+        }
+        .ing-foto input{
+            width: 80%;
+            margin:5% 10%;
+            padding:5% 0%;
+            text-align:start;
+            border:0px;
+        }
+    
+        .formulario p{
+            display: flex;
+            flex-direction: column;   
+        }
+        .fecha-nac #nacimiento{
+            margin:5% 0%;
+            padding:5% 0%;
+            text-align:start ;
+        }
+        .tipo-func, .interes, .img-cont, .flex-contra, .fecha-nac{
+            display: flex;
+            flex-direction: column;
+        }
+        .tipo-func p, .interes p{
+            margin:2% 4%;
+        }
+        .label-titulo{
+            margin-bottom: 3%;
+        }
+        .img-cont .ing-foto input{
+            width: 100%;
+            margin:3% 0%;
+        }
+        .img-cont .ing-foto label{
+            margin-bottom: 3%;
+        }
+        .flex-contra input[type="submit"]{
+            border:solid 2px #ebebeb;
+            color:white;
+            width: 100%;
+            text-align:center;
+            background-color:#1259c3;
+        }
+        /*Fin formulario*/
+        main{
+            width: 100%;
+        }
+}
+@media (min-width:769px){ /* desktops*/
+     
+    /*inicio del logo y buscador*/
+    header{
+        width: 100%;
+        font-family: roboto;
+        font-size: 1vw;
+        color:black;
+        text-align: center;
+    }
+
+    header img{
+        width: 100%;
+        text-align: center;
+    }
+
+    #header-sup{
+        display: flex;
+        width: 90%;
+        height: auto;
+        align-items: center;
+        padding:5% 2%;
+        margin-left: 10%;
+    
+    }
+
+    #header-sup p,#header-sup #cabecera, #header-sup #cabecera #logo{
+        flex-grow: 1;
+        width: 100%;
+    }
+   
+
+    #cabecera{
+        display: flex;
+        align-items:center;
+        
+    }
+    
+    #cabecera form{
+        display:flex;
+        width: 100%;
+        height: auto;
+        border: 1px  ;
+        padding:5px 2px;
+        border-radius: 3px;
+        height: 2vw;
+    }
+
+    #cabecera form input{
+        padding-left: 5px ;
+        flex-grow: 0.7;
+        width: 70%;
+    }
+    #cabecera form,#cabecera #logo{
+        margin:2%; 
+        flex-grow: 1; 
+    }
+
+
+    #cabecera form button{
+        flex-grow: 0.3;
+        background-color:white;
+        border:solid 1px black;
+        color: gray;
+        margin-left: 2px;
+    }
+    #compras{
+        margin:2px;
+    }
+
+    div #barra-opc{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div #barra-opc ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    div #barra-opc #logos{
+        display: flex;
+    }  
+
+    div #barra-opc a{
+        width: auto;
+        height: 10%;
+        margin:0px 6px;
+    }
+
+    #boton-menu button{
+        display :none;
+    }
+
+    #logo img{
+        width:100%;
+        height: auto;
+    }
+    /*inicio del logo y buscador*/
+    /*Inicio de formulario */
+    main{
+        margin:5% 5%;
+        width: auto;
+        height: 80%;
+        border-radius: 10px;
+    }
+
+    main #registro{
+        display: flex;
+        flex-direction: column;
+        margin:0% 12%;
+        padding:10px;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario input, .img-cont input{
+        width: 80%;
+        margin:5% 0%;
+        padding:2% 0%;
+        text-align: start;
+        border-radius: 5px;
+        border:solid 2px lightgray;
+    }
+    .ing-foto input{
+        width: 80%;
+        margin:5% 10%;
+        padding:5% 0%;
+        text-align:start;
+        border:0px;
+    }
+
+    .fecha-nac #nacimiento{
+        margin:5% 0%;
+        padding:2% 0%;
+        text-align:start ;
+    }
+    .tipo-func, .interes, .img-cont, .flex-contra, .fecha-nac{
+        display: flex;
+        flex-direction: column;
+    }
+    .tipo-func p, .interes p{
+        margin:2% 4%;
+    }
+    .label-titulo{
+        margin-bottom: 3%;
+    }
+    .img-cont .ing-foto input{
+        width: 100%;
+        margin:3% 0%;
+    }
+    .img-cont .ing-foto label{
+        margin-bottom: 3%;
+    }
+    .flex-contra input[type="submit"]{
+        border:solid 2px #ebebeb;
+        color:white;
+        width: 100%;
+        text-align:center;
+        background-color:#1259c3;
+    }
+}
