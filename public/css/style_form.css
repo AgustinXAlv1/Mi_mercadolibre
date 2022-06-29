@@ -7,7 +7,7 @@
 header{
     background-color: #EAC926;
     font-family: roboto;
-    font-size: 10px;
+    font-size:3.5vw;
     color:black;
 }
 
@@ -38,11 +38,11 @@ section h2{
 }
 
 .precio{
-    font-size: 18px;
+    font-size: 1.8vw;
 }
 
 .descripcion, .descuento{
-    font-size: 16px;
+    font-size: 1.6vw;
 }
 
 footer section{
@@ -174,62 +174,40 @@ article{
         
     }
     /*Fin del menu de opc */
-    /*Inicio de formulario */
-    main #registro{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
+    /*Inicio de formulario*/
+    main{
+        width: 100%;
     }
+
     .formulario{
         display: flex;
         flex-direction: column;
     }
-    .formulario input, .img-cont input{
-        width: 80%;
-        margin:5% 10%;
-        padding:5% 0%;
-        text-align: center;
-        border-radius: 5px;
-        border:solid 2px lightgray;
-    }
-    .ing-foto input{
-        width: 80%;
-        margin:5% 10%;
-        padding:5% 0%;
-        text-align: center;
-        border:0px;
+
+    .fecha-nac{
+        align-items: center;
     }
 
-    .formulario p{
+    .fecha-nac input{
+        width: 80%;
+        margin :2.5% 10%;
+        text-align: center;
+        padding: 2.5%;
+        border-radius: 5px;
+        border:solid 1px lightgray;
+
+    }
+
+    .fecha-nac input[type="date"]{
+        text-align: start;
+    }
+
+    .radio-check p{
+        margin :2.5% 5%;
+    }
+
+    .radio-check .radios{
         display: flex;
-        flex-direction: column;   
-    }
-    .formulario p #nacimiento{
-        margin:5% 10%;
-        padding:5% 0%;
-        text-align:start ;
-    }
-    .tipo-func, .interes, .img-cont, .flex-contra, .fecha-nac{
-        display: flex;
-        flex-direction: column;
-    }
-    .tipo-func p, .interes p{
-        margin:2% 4%;
-    }
-    .label-titulo{
-        margin-bottom: 3%;
-    }
-    .img-cont .ing-foto input{
-        width: 100%;
-        margin:3% 0%;
-    }
-    .img-cont .ing-foto label{
-        margin-bottom: 3%;
-    }
-    .flex-contra input[type="submit"]{
-        border:solid 2px #ebebeb;
-        color:white;
-        background-color:#1259c3;
     }
     /*Fin de formulario*/
 }
@@ -326,70 +304,11 @@ article{
         height: auto;
     }
     /*inicio del logo y buscador*/
-        /*Inicio de formulario */
-        main #registro{
-            display: flex;
-            flex-direction: column;
-            margin:0% 12%;
-            padding:10px;
-        }
-        .formulario{
-            display: flex;
-            flex-direction: column;
-        }
-        .formulario input, .img-cont input{
-            width: 100%;
-            margin:5% 0%;
-            padding:5% 0%;
-            text-align: start;
-            border-radius: 5px;
-            border:solid 2px lightgray;
-        }
-        .ing-foto input{
-            width: 80%;
-            margin:5% 10%;
-            padding:5% 0%;
-            text-align:start;
-            border:0px;
-        }
-    
-        .formulario p{
-            display: flex;
-            flex-direction: column;   
-        }
-        .fecha-nac #nacimiento{
-            margin:5% 0%;
-            padding:5% 0%;
-            text-align:start ;
-        }
-        .tipo-func, .interes, .img-cont, .flex-contra, .fecha-nac{
-            display: flex;
-            flex-direction: column;
-        }
-        .tipo-func p, .interes p{
-            margin:2% 4%;
-        }
-        .label-titulo{
-            margin-bottom: 3%;
-        }
-        .img-cont .ing-foto input{
-            width: 100%;
-            margin:3% 0%;
-        }
-        .img-cont .ing-foto label{
-            margin-bottom: 3%;
-        }
-        .flex-contra input[type="submit"]{
-            border:solid 2px #ebebeb;
-            color:white;
-            width: 100%;
-            text-align:center;
-            background-color:#1259c3;
-        }
-        /*Fin formulario*/
-        main{
-            width: 100%;
-        }
+    /*Inicio de formulario*/
+    /*Fin de formulario*/
+    main{
+        width: 100%;
+    }
 }
 @media (min-width:769px){ /* desktops*/
      
@@ -397,7 +316,7 @@ article{
     header{
         width: 100%;
         font-family: roboto;
-        font-size: 1vw;
+        font-size: 1.3vw;
         color:black;
         text-align: center;
     }
@@ -436,7 +355,7 @@ article{
         border: 1px  ;
         padding:5px 2px;
         border-radius: 3px;
-        height: 2vw;
+        height: 3.3vw;
     }
 
     #cabecera form input{
@@ -491,67 +410,7 @@ article{
         height: auto;
     }
     /*inicio del logo y buscador*/
-    /*Inicio de formulario */
-    main{
-        margin:5% 5%;
-        width: auto;
-        height: 80%;
-        border-radius: 10px;
-    }
-
-    main #registro{
-        display: flex;
-        flex-direction: column;
-        margin:0% 12%;
-        padding:10px;
-    }
-    .formulario{
-        display: flex;
-        flex-direction: column;
-    }
-    .formulario input, .img-cont input{
-        width: 80%;
-        margin:5% 0%;
-        padding:2% 0%;
-        text-align: start;
-        border-radius: 5px;
-        border:solid 2px lightgray;
-    }
-    .ing-foto input{
-        width: 80%;
-        margin:5% 10%;
-        padding:5% 0%;
-        text-align:start;
-        border:0px;
-    }
-
-    .fecha-nac #nacimiento{
-        margin:5% 0%;
-        padding:2% 0%;
-        text-align:start ;
-    }
-    .tipo-func, .interes, .img-cont, .flex-contra, .fecha-nac{
-        display: flex;
-        flex-direction: column;
-    }
-    .tipo-func p, .interes p{
-        margin:2% 4%;
-    }
-    .label-titulo{
-        margin-bottom: 3%;
-    }
-    .img-cont .ing-foto input{
-        width: 100%;
-        margin:3% 0%;
-    }
-    .img-cont .ing-foto label{
-        margin-bottom: 3%;
-    }
-    .flex-contra input[type="submit"]{
-        border:solid 2px #ebebeb;
-        color:white;
-        width: 100%;
-        text-align:center;
-        background-color:#1259c3;
-    }
+    /*Inicio de formulario*/
+    /*Fin de formulario*/
+    
 }
