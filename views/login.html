@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Login</title>
     <script src="https://kit.fontawesome.com/7a0a501500.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style_form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,64 +47,11 @@
         <img id="logo-promo" src="/images/img-home-banner.jpg" alt="Logo-banner">
     </header>
     <main>
-        <form id="registro" >
-            <div class="formulario">
-                <div class="fecha-nac">
-                    <input type="text" placeholder="Nombre y Apellido">
-                    <input type="text" placeholder="Nombre de usuario">
-                </div>
-                <div class="fecha-nac">
-                    <b class="label-titulo"><label for="fecha">Seleccione su fecha de Nacimiento</label></b>
-                    <input id="nacimiento" type="date" name="fecha"> 
-                    <input type="text" placeholder="Domicilio">
-                </div>                    
-                <div class="radio-check"> 
-                    <b class="label-titulo" ><label for="funcion">Funcion de usuario</label></b>
-                    <div class="radios">
-                        <p >
-                            <input type="radio" name="funcion" value="comprar">
-                            <label for="funcion">Comprar</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="funcion" value="vender">
-                            <label for="funcion">Vender</label>
-                        </p>
-                    </div>
-                </div>
-                <div class="radio-check">
-                    <b class="label-titulo"><label  for="Gustos">Seleccione categorías de interés</label></b>
-                    <p>
-                        <label for="Gustos">Electro</label>
-                        <input type="checkbox" name="Gustos" value="Electro">
-                    </p>
-                    <p>
-                        <label for="Gustos">Moda</label>
-                        <input type="checkbox" name="Gustos" value="Moda">
-                    </p>
-                    <p>
-                        <label for="Gustos">Hogar</label>
-                        <input type="checkbox" name="Gustos" value="Hogar">
-                    </p>
-                    <p>
-                        <label for="Gustos">Jugueteria</label>
-                        <input type="checkbox" name="Gustos" value="Jugueteria">
-                    </p>
-                    <p>
-                        <label for="Gustos">Vida sana</label>
-                        <input type="checkbox" name="Gustos" value="Vida-sana">
-                    </p>
-                </div>
-                <div class="fecha-nac">
-                    <b class="label-titulo"><label for="foto">Seleccione una foto para su perfil:</label></b>
-                    <input type="file" name="foto" accept=".jpg">
-                </div>
-                <div class="fecha-nac">
-                    <input type="password" required placeholder="Contraseña">
-                    <input type="password" required placeholder="Contraseña">
-                    <input type="submit">
-                </div>      
-            </div>    
-        </form>
+        <div class="fecha-nac">
+            <input type="text" placeholder="Nombre de usuario">
+            <input type="password" required placeholder="Contraseña">
+            <input type="submit">
+        </div>
     </main>
     <footer>
         <div>
@@ -129,5 +76,6 @@
         </div>   
         <p>● Copyright © 1999-2020 MercadoLiebre S.R.L.</p>     
     </footer>
+    
 </body>
 </html>

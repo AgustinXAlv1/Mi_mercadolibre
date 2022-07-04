@@ -176,12 +176,15 @@ article{
     /*Fin del menu de opc */
     /*Inicio del main*/
     main{
-        width: 100%;
+        width: 90%;
         margin: auto;
         background-color: #ebebeb;
     }
     body{
         background-color: #ebebeb;
+    }
+    .publicacion{
+        margin-bottom: 9%;
     }
 
     .desc-prod{
@@ -198,8 +201,8 @@ article{
         border: 1px solid #39b54a;
         background-color: #FFF;
         position: relative;
-        left: 90%;
-        bottom:3vw;
+        left: 80%;
+        bottom: 18px;
     }
 
     .flex-pd{
@@ -287,6 +290,7 @@ article{
     div #barra-opc{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 1vw;
     }
 
     div #barra-opc ul{
@@ -297,12 +301,12 @@ article{
 
     div #barra-opc #logos{
         display: flex;
-        flex-wrap: wrap;
+
     }  
 
     div #barra-opc a{
-        width: 100%;
-        margin:0px 6px;
+        height: 100%;
+        margin-right: 2vw;
     }
 
     #boton-menu button{
@@ -340,6 +344,10 @@ article{
         margin:5% 5%;
     }
     
+    .publicacion img{
+        height: 100%;
+    }
+    
 
     #uv-flex{
         display:flex;
@@ -347,14 +355,9 @@ article{
         justify-content: center;
     }
 
-
-    .publicacion div{
-        padding-left:0px;
-        padding-right:0px;
-    }
-
     .desc-prod{
         background-color: white;
+        height: 100%;
     }
 
     .desc-prod i{
@@ -366,9 +369,10 @@ article{
         border: 1px solid #39b54a;
         background-color: #FFF;
         position: relative;
-        left: 90%;
-        bottom:3vw;
+        left: 80%;
+        bottom:18px;
     }
+
     .descuento {
         padding-left: 5px;
     }
@@ -377,10 +381,12 @@ article{
         display: flex;
     }
     .descuento{
+        font-size: 3vw;
         flex-grow: 0.7;
     }
     .precio{
-        flex-grow: 0.3; 
+        flex-grow: 0.3;
+        font-size: 3vw; 
     }
 
 }
@@ -391,7 +397,7 @@ article{
     header{
         width: 100%;
         font-family: roboto;
-        font-size: 10px;
+        font-size: 1.2vw;
         color:black;
     }
     header img{
@@ -406,39 +412,42 @@ article{
     
     #cabecera form{
         display:flex;
-        width: 100%;
-        height: auto;
-        border: 1px  ;
-        padding:5px 2px;
-        border-radius: 3px;
+        width: 90%;
+        height: 2.8vw;
+        border: px  ;
+        border-radius: 5px;
     }
 
     #cabecera form input{
         padding-left: 5px ;
-        flex-grow: 0.7;
-        width: 70%;
+        border-radius: 5px;
+        flex-grow: 0.8;
+        border:0px;
     }
     #cabecera form,#cabecera #logo{
         margin:2%; 
         flex-grow: 1; 
     }
-
-
     #cabecera form button{
-        flex-grow: 0.3;
+        flex-grow: 0.2;
         background-color:white;
-        border:solid 1px black;
+        border:0px;
         color: gray;
         margin-left: 2px;
+
     }
     #compras{
         margin:2px;
+        font-size:1vw;
     }
 
     
     #header-sup{
         display: flex;
-        width: 100%;
+        width: 70%;
+        height: 100%;
+        margin: 0px 15%;
+        text-align: center;
         height: auto;
         align-items: center;
         padding:5% 2%;
@@ -451,6 +460,7 @@ article{
    
     div #barra-opc{
         display: flex;
+        margin: 3px 10%;
         justify-content: space-between;
     }
 
@@ -467,7 +477,7 @@ article{
 
     div #barra-opc a{
         width: 100%;
-        margin:0px 6px;
+        margin:0px 2vw;
     }
 
     #boton-menu button{
@@ -476,7 +486,6 @@ article{
 
     #logo img{
         width:100%;
-        height: auto;
     }
     /*inicio del logo y buscador*/
     nav p{
@@ -500,23 +509,27 @@ article{
         display: flex;
         flex-direction: column;
     }
+    article img{
+        border: solid 1px #ebebeb;
+    }
     
     .publicacion{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin-bottom: 0px;
+        background-color: white;
         width: 30%;
         height: 100%; 
         margin:2.5% 2.5%;
         flex-grow: 0.25;
         display: flex;
         flex-direction: column;
-        align-self: stretch;
+    }
+    .publicacion .descripcion{
+        margin:2% 2%;
     }
 
     #uv-flex{
         display:flex;
-        position: relative;
-        
+        align-items: center;
     }
 
 
@@ -527,7 +540,7 @@ article{
 
     .desc-prod{
         background-color: white;
-        
+        border: solid 1px #ebebeb;
        
     }
 
@@ -540,23 +553,49 @@ article{
         border: 1px solid #39b54a;
         background-color: #FFF;
         position: relative;
-        left: 90%;
-        bottom:2.3vw;
+        left: 80%;
+        bottom: 14px;
     }
-    
-    
     .flex-pd{
         display: flex;
+        margin :2px 0px;
+    
     }
     .descuento{
+        font-size:1.2vw ;
         flex-grow: 0.7;
     }
     .precio{
+        font-size:1.2vw ;
         flex-grow: 0.3;
     }
-
-    .descuento, .precio, .descripcion{
-        margin:auto 5px;
+    .descripcion{
+        font-size:1.3vw ;
+        opacity: 0;
     }
+
+    
+    .publicacion:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 500ms;
+
+    }
+
+    .publicacion:hover i{
+        transform: rotate(-90deg);
+        transition: all 500ms;
+    }
+    .publicacion:hover .descripcion {
+        opacity: 1;
+    }
+    #barra-opc a:hover{
+        background-color:#0022AA ;
+        border-radius: 7px;
+        color:white;
+        transition: all 0.7s;
+    }
+
+
+
 
 }
